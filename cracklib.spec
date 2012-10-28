@@ -7,7 +7,10 @@ Group:		Libraries
 Source0:	http://heanet.dl.sourceforge.net/cracklib/%{name}-%{version}.tar.gz
 # Source0-md5:	79053ad8bc714a44cd660cb12116211b
 URL:		http://sourceforge.net/projects/cracklib/
-#BuildRequires:	python-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
+BuildRequires:	libtool
 BuildRequires:	words
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -96,8 +99,8 @@ mv -f $RPM_BUILD_ROOT%{_localedir}/{sl_SI,sl}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post	-p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%post	-p /usr/sbin/ldconfig
+%postun -p /usr/sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
