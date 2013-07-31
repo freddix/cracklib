@@ -1,11 +1,11 @@
 Summary:	Password checking library
 Name:		cracklib
-Version:	2.8.18
-Release:	3
+Version:	2.9.0
+Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://heanet.dl.sourceforge.net/cracklib/%{name}-%{version}.tar.gz
-# Source0-md5:	79053ad8bc714a44cd660cb12116211b
+# Source0-md5:	e0f94ac2138fd33c7e77b19c1e9a9390
 URL:		http://sourceforge.net/projects/cracklib/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -62,7 +62,7 @@ Requires:	%{name} = %{version}-%{release}
 Python binding for cracklib.
 
 %prep
-%setup	-q
+%setup -q
 
 %build
 %{__gettextize}
