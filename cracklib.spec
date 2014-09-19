@@ -1,7 +1,8 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/cracklib.git
 Summary:	Password checking library
 Name:		cracklib
 Version:	2.9.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Core/Libraries
 Source0:	http://downloads.sourceforge.net/project/cracklib/cracklib/%{version}/%{name}-%{version}.tar.gz
